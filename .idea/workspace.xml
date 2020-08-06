@@ -2,29 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c72b6acf-86d8-4d13-adbb-48aaf3cf7e48" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HoliCity/Coco_format.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HoliCity/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HoliCity/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Megadepth/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SYNTHIA/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ScanNet/Coco_format.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ScanNet/RecordReaderAll.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ScanNet/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ScanNet/convert_tfrecords.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discard/ScanNet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discard/Synthia.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discard/tools.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eval_holicity_2d_metric.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/try_detectron2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/try_detectron2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/balloon_mask.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/visual_easy_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/visual_easy_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Megadepth/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Megadepth/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SYNTHIA/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/SYNTHIA/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discard/ScanNet.py" beforeDir="false" afterPath="$PROJECT_DIR$/discard/ScanNet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eval_holicity_2d_metric.py" beforeDir="false" afterPath="$PROJECT_DIR$/eval_2d_metric.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visual_easy_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/discard/visual_easy_dataset.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,10 +27,24 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="357" column="13" selection-start-line="357" selection-start-column="13" selection-end-line="357" selection-end-column="13" />
+            <state relative-caret-position="539">
+              <caret line="316" lean-forward="true" selection-start-line="316" selection-end-line="316" />
               <folding>
                 <element signature="e#482#491#0" expanded="true" />
+                <element signature="e#6218#9119#0" />
+                <element signature="e#10817#10833#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eval_2d_metric.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="123" column="43" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -63,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Megadepth/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+            <state relative-caret-position="270">
+              <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -72,8 +71,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SYNTHIA/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" selection-start-line="34" selection-end-line="48" selection-end-column="30" />
+            <state relative-caret-position="285">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ScanNet/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -81,8 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="841">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -105,7 +113,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HoliCity/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
+            <state relative-caret-position="-795">
               <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -178,20 +186,21 @@
         <option value="$PROJECT_DIR$/ScanNet/Coco_format.py" />
         <option value="$PROJECT_DIR$/discard/HoliCity.py" />
         <option value="$PROJECT_DIR$/ScanNet/__init__.py" />
-        <option value="$PROJECT_DIR$/eval_holicity_2d_metric.py" />
         <option value="$PROJECT_DIR$/HoliCity/Coco_format.py" />
-        <option value="$PROJECT_DIR$/tools.py" />
-        <option value="$PROJECT_DIR$/Megadepth/__init__.py" />
-        <option value="$PROJECT_DIR$/SYNTHIA/__init__.py" />
         <option value="$PROJECT_DIR$/HoliCity/utils.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/HoliCity/__init__.py" />
+        <option value="$PROJECT_DIR$/eval_holicity_2d_metric.py" />
+        <option value="$PROJECT_DIR$/eval_2d_metric.py" />
+        <option value="$PROJECT_DIR$/SYNTHIA/__init__.py" />
+        <option value="$PROJECT_DIR$/Megadepth/__init__.py" />
+        <option value="$PROJECT_DIR$/tools.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1530" />
-    <option name="y" value="-82" />
+    <option name="x" value="-1414" />
+    <option name="y" value="-101" />
     <option name="width" value="1286" />
     <option name="height" value="876" />
   </component>
@@ -208,16 +217,6 @@
             <path>
               <item name="try_detectron2" type="b2602c69:ProjectViewProjectNode" />
               <item name="try_detectron2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="try_detectron2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="try_detectron2" type="462c0819:PsiDirectoryNode" />
-              <item name="discard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="try_detectron2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="try_detectron2" type="462c0819:PsiDirectoryNode" />
-              <item name="HoliCity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="try_detectron2" type="b2602c69:ProjectViewProjectNode" />
@@ -249,14 +248,14 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/discard" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/SYNTHIA" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/ScanNet" />
       <recent name="D:\Python\try_detectron2" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/discard" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -329,7 +328,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/visual_easy_dataset.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/discard/visual_easy_dataset.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -373,15 +372,16 @@
       <workItem from="1596558591262" duration="20305000" />
       <workItem from="1596612470786" duration="2175000" />
       <workItem from="1596656504842" duration="4058000" />
-      <workItem from="1596733077044" duration="225000" />
+      <workItem from="1596733077044" duration="3397000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145051000" />
+    <option name="totallyTimeSpent" value="148223000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1471" y="-90" width="1286" height="876" extended-state="0" />
+    <frame x="-1414" y="-101" width="1286" height="876" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19206843" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -395,7 +395,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="File Transfer" order="9" visible="true" weight="0.13623978" />
+      <window_info anchor="bottom" id="File Transfer" order="9" visible="true" weight="0.13554987" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" />
@@ -422,7 +422,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/visual_easy_dataset.py">
+    <entry file="file://$PROJECT_DIR$/discard/visual_easy_dataset.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
           <caret line="327" column="35" selection-start-line="327" selection-start-column="35" selection-end-line="327" selection-end-column="35" />
@@ -638,16 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eval_holicity_2d_metric.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.3/remote_sources/1715872540/-1366004971/detectron2/engine/train_loop.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="976">
@@ -730,54 +720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScanNet/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="357" column="13" selection-start-line="357" selection-start-column="13" selection-end-line="357" selection-end-column="13" />
-          <folding>
-            <element signature="e#482#491#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HoliCity/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="56" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Megadepth/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SYNTHIA/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" selection-start-line="34" selection-end-line="48" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HoliCity/Coco_format.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1545">
@@ -790,10 +732,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HoliCity/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
+        <state relative-caret-position="-795">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HoliCity/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="56" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eval_2d_metric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="123" column="43" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SYNTHIA/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Megadepth/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScanNet/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="841">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="316" lean-forward="true" selection-start-line="316" selection-end-line="316" />
+          <folding>
+            <element signature="e#482#491#0" expanded="true" />
+            <element signature="e#6218#9119#0" />
+            <element signature="e#10817#10833#0" />
           </folding>
         </state>
       </provider>

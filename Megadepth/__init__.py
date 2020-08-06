@@ -18,11 +18,6 @@ class Config():
         self.meta_dir_mode = "1"
         self.output_dir = f"./output/{self._name}_{self.log}"
 
-    # def training(self):
-    #     self.train_name = f"{self._name}_train"
-    #     self.train_output_dir = f"{self.output_dir}/train_log"
-    #     self.train_json_file = f"{self.train_name}_coco_format.json"
-
     def predict(self):
         self.pred_name = f"{self._name}_pred"
         self.pred_output_dir = f"{self.output_dir}/predict_log"

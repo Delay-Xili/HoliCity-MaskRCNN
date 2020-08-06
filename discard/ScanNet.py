@@ -230,7 +230,7 @@ def train():
 
 def valid():
 
-    from eval_holicity_2d_metric import Holicity_2d_metric
+    from eval_2d_metric import Holicity_2d_metric
 
     # isws399 = False
     # if not isws399:

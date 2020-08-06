@@ -88,32 +88,20 @@ def coco_result_format(pre_seg_dirs, pre_score_dirs, outpath):
         json.dump(coco_results, json_file, cls=MyEncoder)
 
 
-def Holicity_2d_metric(
-        pre_seglist, pre_scorelist,
+def coco_2d_metric(
         annType="segm",
-        output="data",
         annFile="HoliCity_valid_coco_format.json",  # gt json file name
         resFile='HoliCity_valid_results.json',  # results file name
-
-):
-    """
-    all img_dirs, gt_seglist, pre_seglist, pre_scorelist, should be the list of absolute paths
-    """
+        ):
 
     if annType not in ['segm', 'bbox', 'keypoints']:
         raise ValueError("no such type!")
 
     # initialize COCO format ground truth api
-    os.makedirs(output, exist_ok=True)
-    annPath = osp.join(output, annFile)
-    cocoGt = COCO(annPath)
+    cocoGt = COCO(annFile)
 
     # initialize COCO results api
-    resPath = osp.join(output, resFile)
-    if not os.path.isfile(resPath):
-        # the order of filelist should be same as gt
-        coco_result_format(pre_seglist, pre_scorelist, resPath)
-    cocoDt = cocoGt.loadRes(resPath)
+    cocoDt = cocoGt.loadRes(resFile)
 
     # running evaluation
     imgIds = sorted(cocoGt.getImgIds())
@@ -126,27 +114,26 @@ def Holicity_2d_metric(
     mAP = cocoEval.stats[0]
 
 
-def V2_filelist(image_dirs=None):
+def build_holicity_result_json(results_root, image_root, split='valid', split_version='v1'):
+    from HoliCity.utils import V1_filelist
 
-    middle_p = sorted(os.listdir(image_dirs))
-    filelist = []
-    for pth in middle_p:
-        imgs = sorted(os.listdir(osp.join(image_dirs, pth)))
-        for img in imgs:
-            filelist.append(osp.join(pth, img))
-    return filelist
+    npz_pth = f"{results_root}/npz"
+    json_pth = f"{results_root}/result_json"
+    os.makedirs(json_pth, exist_ok=True)
+
+    output = f"{json_pth}/coco_results.json"
+
+    # image_root = "/home/dxl/Data/LondonCity/V1"
+    meta_dirs = V1_filelist(split=split, rootdir=image_root, split_version=split_version)
+
+    pre_seglist = [osp.join(npz_pth, path + "_plan.png") for path in meta_dirs]
+    pre_scorelist = [osp.join(npz_pth, path + "_plan.npz") for path in meta_dirs]
+
+    coco_result_format(pre_seglist, pre_scorelist, output)
+    print("build result.json Done")
 
 
 def eval_scannet():
-
-    # gt_root = "/home/dxl/Data/LondonCity/renderings_plane/20200222"  # gt dirs
-    # results_root = "logs/try/npz"  # results dir, should be like gt dirs
-    # cleanf = "newfilelist.txt"
-    # filef = "20200222-filelist.txt"
-    # trainf = "20200222-middle-train.txt"
-    # validf = "20200222-middle-test.txt"
-    # filelist = get_filelist(rootdir=gt_root, split="valid", cleanf=cleanf, filef=filef, trainf=trainf, validf=validf)
-    # img_dirs = [f"{gt_root.replace('renderings_plane', 'renderings')}/{path}_imag.png" for path in filelist]
 
     # configuration
     # -------- change with your path ----------

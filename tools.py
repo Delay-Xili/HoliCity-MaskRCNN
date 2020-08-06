@@ -60,10 +60,6 @@ def yichao_visual(I, buf_plane, prefix):
         I = I * (1 - alpha_fill) + alpha_fill * color
         I = I * (1 - alpha_edge) + alpha_edge * color
 
-    # plt.figure()
-    # plt.imshow(I)
-    # plt.axis('off'), plt.xticks([]), plt.yticks([])
-    # plt.savefig(prefix, bbox_inches='tight', pad_inches=0.0, dpi=100)
     cv2.imwrite(prefix, I[:, :, ::-1]*255)
 
 

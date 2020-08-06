@@ -19,6 +19,8 @@ from detectron2.evaluation import COCOEvaluator, inference_on_dataset
 from detectron2.data import build_detection_test_loader
 from detectron2.utils.visualizer import ColorMode
 from detectron2.data.datasets import register_coco_instances
+from detectron2.layers import ROIAlign
+
 
 import cv2
 from pycocotools import mask
@@ -207,8 +209,9 @@ def make_cfg():
     cfg.DATASETS.TRAIN = (_name,)
     cfg.DATASETS.TEST = ()
     cfg.DATALOADER.NUM_WORKERS = 4
-    cfg.MODEL.WEIGHTS = model_zoo.get_checkpoint_url(
-        "COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml")  # Let training initialize from model zoo
+    # cfg.MODEL.WEIGHTS = model_zoo.get_checkpoint_url(
+    #     "COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml")  # Let training initialize from model zoo
+    cfg.MODEL.WEIGHTS = os.path.join(cfg.OUTPUT_DIR, "model_0149999.pth")
     cfg.SOLVER.IMS_PER_BATCH = 4
     cfg.SOLVER.BASE_LR = 0.00025  # pick a good LR
     cfg.SOLVER.MAX_ITER = 150000  # 300 iterations seems good enough for this toy dataset; you may need to train longer for a practical dataset
@@ -232,7 +235,7 @@ def evaluator(cfg):
 
 
 def build_predictor_vis(cfg):
-    cfg.MODEL.WEIGHTS = os.path.join(cfg.OUTPUT_DIR, "model_0064999.pth")
+    cfg.MODEL.WEIGHTS = os.path.join(cfg.OUTPUT_DIR, "model_0149999.pth")
     # cfg.MODEL.WEIGHTS = os.path.join(cfg.OUTPUT_DIR, "model_final.pth")
     cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.5  # set the testing threshold for this model
     cfg.DATASETS.TEST = (_name,)
@@ -240,7 +243,7 @@ def build_predictor_vis(cfg):
 
     dataset_dicts = DatasetCatalog.get(_name)
     metadata = MetadataCatalog.get(_name)
-    for k in range(5):
+    for k in range(100):
         d = dataset_dicts[k]
     # for d in random.sample(dataset_dicts, 2):
         im = cv2.imread(d["file_name"])
@@ -256,7 +259,7 @@ def build_predictor_vis(cfg):
                        scale=2,
                        instance_mode=ColorMode.IMAGE_BW  # remove the colors of unsegmented pixels
                        )
-        v_p_nobbx = Visualizer(im[:, :, ::-1],
+        v_p_nobbx = Visualizer(im_demo[:, :, ::-1],
                        metadata=metadata,
                        scale=2,
                        instance_mode=ColorMode.IMAGE_BW  # remove the colors of unsegmented pixels
@@ -268,12 +271,12 @@ def build_predictor_vis(cfg):
         v_p_nobbx = v_p_nobbx.draw_instance_predictions(outputs["instances"].to("cpu"))
 
         plt.figure(figsize=[40, 10])
-        plt.subplot(141), plt.imshow(v_p_nobbx.get_image()[:, :, ::-1])
-        plt.subplot(142), plt.imshow(v_p.get_image()[:, :, ::-1])
-        plt.subplot(143), plt.imshow(v_gt.get_image()[:, :, ::-1])
-        plt.subplot(144), plt.imshow(im_demo)
-        plt.savefig(f"demo/predict_{d['image_id']}.png", dpi=200), plt.close()
-        print(f"Saving demo/predict_{d['image_id']}.png")
+        plt.subplot(141), plt.imshow(im_demo)
+        plt.subplot(142), plt.imshow(v_p_nobbx.get_image()[:, :, ::-1])
+        plt.subplot(143), plt.imshow(v_p.get_image()[:, :, ::-1])
+        plt.subplot(144), plt.imshow(v_gt.get_image()[:, :, ::-1])
+        plt.savefig(f"demo/synthesized_easy/predict_{d['image_id']}.png", dpi=200), plt.close()
+        print(f"Saving demo/synthesized_easy/predict_{d['image_id']}.png")
 
 
 def random_vis():
@@ -318,7 +321,7 @@ if __name__ == '__main__':
     cfg__ = make_cfg()
 
     # begin train
-    # trainer = DefaultTrainer(cfg__)
+    trainer = DefaultTrainer(cfg__)
     # trainer.resume_or_load(resume=False)
     # trainer.train()
 
@@ -326,8 +329,8 @@ if __name__ == '__main__':
     build_predictor_vis(cfg__)
 
     # evaluating validation data set
-    # trainer.resume_or_load(resume=True)
-    # evaluator, val_loader = evaluator(cfg__)
-    # inference_on_dataset(trainer.model, val_loader, evaluator)
+    trainer.resume_or_load(resume=True)
+    evaluator, val_loader = evaluator(cfg__)
+    inference_on_dataset(trainer.model, val_loader, evaluator)
 
 

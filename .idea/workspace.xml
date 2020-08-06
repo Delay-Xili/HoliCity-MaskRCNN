@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c72b6acf-86d8-4d13-adbb-48aaf3cf7e48" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Megadepth/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Megadepth/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SYNTHIA/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/SYNTHIA/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discard/ScanNet.py" beforeDir="false" afterPath="$PROJECT_DIR$/discard/ScanNet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eval_holicity_2d_metric.py" beforeDir="false" afterPath="$PROJECT_DIR$/eval_2d_metric.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HoliCity/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/HoliCity/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visual_easy_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/discard/visual_easy_dataset.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="316" lean-forward="true" selection-start-line="316" selection-end-line="316" />
+            <state relative-caret-position="240">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#482#491#0" expanded="true" />
                 <element signature="e#6218#9119#0" />
@@ -50,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HoliCity/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="49" column="56" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
+            <state relative-caret-position="240">
+              <caret line="16" column="62" lean-forward="true" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -133,7 +127,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>device</find>
       <find>GeneralizedRCNN</find>
       <find>head</find>
       <find>key</find>
@@ -156,6 +149,7 @@
       <find>INPUT</find>
       <find>LR</find>
       <find>EVAL_PERIOD</find>
+      <find>device</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -188,19 +182,19 @@
         <option value="$PROJECT_DIR$/ScanNet/__init__.py" />
         <option value="$PROJECT_DIR$/HoliCity/Coco_format.py" />
         <option value="$PROJECT_DIR$/HoliCity/utils.py" />
-        <option value="$PROJECT_DIR$/HoliCity/__init__.py" />
         <option value="$PROJECT_DIR$/eval_holicity_2d_metric.py" />
         <option value="$PROJECT_DIR$/eval_2d_metric.py" />
         <option value="$PROJECT_DIR$/SYNTHIA/__init__.py" />
         <option value="$PROJECT_DIR$/Megadepth/__init__.py" />
         <option value="$PROJECT_DIR$/tools.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/HoliCity/__init__.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1414" />
-    <option name="y" value="-101" />
+    <option name="x" value="-1598" />
+    <option name="y" value="-95" />
     <option name="width" value="1286" />
     <option name="height" value="876" />
   </component>
@@ -372,15 +366,15 @@
       <workItem from="1596558591262" duration="20305000" />
       <workItem from="1596612470786" duration="2175000" />
       <workItem from="1596656504842" duration="4058000" />
-      <workItem from="1596733077044" duration="3397000" />
+      <workItem from="1596733077044" duration="4142000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148223000" />
+    <option name="totallyTimeSpent" value="148968000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1414" y="-101" width="1286" height="876" extended-state="0" />
+    <frame x="-1598" y="-95" width="1286" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19206843" />
@@ -740,13 +734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HoliCity/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="56" selection-start-line="49" selection-start-column="56" selection-end-line="49" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eval_2d_metric.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -790,13 +777,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="316" lean-forward="true" selection-start-line="316" selection-end-line="316" />
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#482#491#0" expanded="true" />
             <element signature="e#6218#9119#0" />
             <element signature="e#10817#10833#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HoliCity/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="62" lean-forward="true" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
         </state>
       </provider>
     </entry>

@@ -11,11 +11,10 @@ class Config():
             self.split_version = 'v1'
 
         self.score_thresh_test = 0.5
-        # self.ckpt = None
+        self.ckpt = None
         # self.ckpt = "output/ScanNet_train_output/model_0099999.pth"  # pretrained on Scannet
-        self.ckpt = "output/HoliCityV0/model_0099999.pth"  # pretrained on HoliCityV0
-        # self.ckpt = "output/HoliCityV1_v1.1_lr2.5e4-lrdecay10w/train_log/model_0099999.pth"  # pretrained on HoliCityV1_v1.1
-        self.log = "trained_on_HoliCityV0"  # HoliCityV0  ScanNet
+        # self.ckpt = "output/HoliCityV0/model_0099999.pth"  # pretrained on HoliCityV0
+        self.log = "lr2.5e4-lrdecay10w"  # HoliCityV0  ScanNet
         self.lr = 2.5e-4
         self.lr_decay = 100000
 
@@ -52,19 +51,16 @@ class Config():
     def predict(self):
         self.pred_name = f"{self._name}_pred"
         self.pred_output_dir = f"{self.output_dir}/predict_log"
-        # filelist = V1_filelist(split="test+valid", rootdir=self.root, split_version=self.split_version)
-        with open("/home/dxl/Data/LondonCity/V1/split/v1/filelist.txt", "r") as f:
-            filelist = [line[:-1] for line in f.readlines()]
 
-        # print(filelist)
-        flist = filter_sample(filelist, "/home/dxl/Data/LondonCity/V1/split/v1/best-hd.txt")
-        # print(flist)
-        self.img_dirs_list = [f"{self.image_root}/{p}_imag.jpg" for p in flist]
+        self.img_dirs_list = get_predict_img(self.image_root)
 
 
-def filter_sample(filelist, split):
+def get_predict_img(image_root):
+    # some high-resolution samples for visualization
+    with open("/home/dxl/Data/LondonCity/V1/split/v1/filelist.txt", "r") as f:
+        filelist = [line[:-1] for line in f.readlines()]
 
-    with open(split, "r") as f:
+    with open("/home/dxl/Data/LondonCity/V1/split/v1/best-hd.txt", "r") as f:
         samples = [line[:-1] for line in f.readlines()]
     # print(samples)
     flist = []
@@ -72,4 +68,5 @@ def filter_sample(filelist, split):
         if pth[:-7] in samples:
             flist.append(pth)
 
-    return flist
+    return [f"{image_root}/{p}_imag.jpg" for p in flist]
+

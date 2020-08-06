@@ -1,14 +1,16 @@
 """Evaluate sAP5, sAP10, sAP15 for LCNN
 Usage:
-    eval-sAP.py [options]
-    eval-sAP.py (-h | --help )
+    main.py [options]
+    main.py (-h | --help )
+
+Examples:
+    python main.py -s train -m HoliCityV1
 
 Arguments:
     <path>                           One or more directories from train.py
 
 Options:
    -h --help                         Show this screen.
-   -d --device <device>              device config   [default: dxl.cluster]
    -s --stage <stage>                stage           [default: train]
    -m --mode <mode>                  dataset         [default: HoliCityV1]
 """

@@ -29,12 +29,18 @@ dataset/
     split/
         v1/
             clean-filelist.txt
-            xxxx.txt
-            ...
+            filelist.txt
+            train-middlesplit.txt
+            test-middlesplit.txt
+            valid-middlesplit.txt
 ```
-**The clean-filelist.txt existed in dataset/, 
-pls put it in dataset/split/v1, you can't build any coco format json files without it**. 
-The sub folder of plane/ should be same as image/
+**The clean-filelist.txt existed in dataset/, please put it in dataset/split/v1**. 
+
+
+### Pre-trained Models
+
+You can download our reference pre-trained models from [Google Drive](https://drive.google.com/drive/folders/1GBvZ-V_Bzanwa_RFZjReTtd6cdeT0hCb?usp=sharing). 
+Those models were trained with `HoliCity/init.py` for 100k iterations.
 
 ### Traning
 

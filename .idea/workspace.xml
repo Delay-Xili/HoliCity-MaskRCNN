@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c72b6acf-86d8-4d13-adbb-48aaf3cf7e48" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/clean-filelist.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,13 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2083">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="e#482#491#0" expanded="true" />
-                <element signature="e#6218#9119#0" />
-                <element signature="e#10817#10833#0" />
-              </folding>
+            <state relative-caret-position="746">
+              <caret line="241" selection-start-line="241" selection-end-line="241" />
             </state>
           </provider>
         </entry>
@@ -36,7 +30,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eval_2d_metric.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
+            <state relative-caret-position="1575">
               <caret line="123" column="43" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="43" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -48,7 +42,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HoliCity/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
+            <state relative-caret-position="810">
               <caret line="54" column="26" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="26" />
             </state>
           </provider>
@@ -58,8 +52,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="375">
-                <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+              <first_editor relative-caret-position="461">
+                <caret line="64" column="11" lean-forward="true" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
               </first_editor>
               <second_editor />
             </state>
@@ -69,7 +63,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="841">
+            <state relative-caret-position="746">
               <caret line="61" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -81,7 +75,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HoliCity/Coco_format.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
+            <state relative-caret-position="1755">
               <caret line="133" column="55" selection-start-line="133" selection-start-column="39" selection-end-line="133" selection-end-column="55" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -93,7 +87,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HoliCity/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-740">
+            <state relative-caret-position="225">
               <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -180,9 +174,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1872" />
-    <option name="y" value="-74" />
-    <option name="width" value="1751" />
+    <option name="x" value="-1905" />
+    <option name="y" value="-137" />
+    <option name="width" value="1695" />
     <option name="height" value="917" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -198,16 +192,6 @@
             <path>
               <item name="try_detectron2" type="b2602c69:ProjectViewProjectNode" />
               <item name="try_detectron2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="try_detectron2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="try_detectron2" type="462c0819:PsiDirectoryNode" />
-              <item name="dataset" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="try_detectron2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="try_detectron2" type="462c0819:PsiDirectoryNode" />
-              <item name="HoliCity" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -349,18 +333,19 @@
       <workItem from="1596558591262" duration="20305000" />
       <workItem from="1596612470786" duration="2175000" />
       <workItem from="1596656504842" duration="4058000" />
-      <workItem from="1596733077044" duration="7436000" />
+      <workItem from="1596733077044" duration="8046000" />
+      <workItem from="1597032743631" duration="2575000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152262000" />
+    <option name="totallyTimeSpent" value="155447000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1764" y="-33" width="1751" height="917" extended-state="0" />
+    <frame x="-1905" y="-137" width="1695" height="917" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14106224" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08908555" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -677,16 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eval_2d_metric.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="123" column="43" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SYNTHIA/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -708,26 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="841">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HoliCity/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-740">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dataset/clean-filelist.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -737,20 +692,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2083">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#482#491#0" expanded="true" />
-            <element signature="e#6218#9119#0" />
-            <element signature="e#10817#10833#0" />
-          </folding>
+        <state relative-caret-position="746">
+          <caret line="241" selection-start-line="241" selection-end-line="241" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HoliCity/Coco_format.py">
+    <entry file="file://$PROJECT_DIR$/eval_2d_metric.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="133" column="55" selection-start-line="133" selection-start-column="39" selection-end-line="133" selection-end-column="55" />
+        <state relative-caret-position="1575">
+          <caret line="123" column="43" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="43" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -759,16 +709,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HoliCity/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
+        <state relative-caret-position="810">
           <caret line="54" column="26" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HoliCity/Coco_format.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1755">
+          <caret line="133" column="55" selection-start-line="133" selection-start-column="39" selection-end-line="133" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HoliCity/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="746">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="375">
-            <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <first_editor relative-caret-position="461">
+            <caret line="64" column="11" lean-forward="true" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
           </first_editor>
           <second_editor />
         </state>

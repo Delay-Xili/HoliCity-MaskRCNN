@@ -1,8 +1,6 @@
 # HoliCity-MaskRCNN
 
-Training the HoliCity V1 through MaskRCNN (Detectron2)
-I am just try
-
+Training the HoliCity V1 through MaskRCNN (Detectron2).
 
 
 ### Installing
@@ -16,7 +14,7 @@ I am just try
 
 Download the HoliCityV1 dataset from [holicity.io](https://people.eecs.berkeley.edu/~zyc/holicity/), 
 which including [split-v1](https://drive.google.com/file/d/1Uypum27IGCxIn4JQkgWJoKhhEmh3x_WS/view), [image](https://drive.google.com/file/d/11-u2uUzBJeKDT3sGz0K-wHJtLXY4NzJD/view), [plane](https://drive.google.com/file/d/1Q3bAl66US_ZfJ_QcaSNoJ6AqnfNBqyd4/view) . 
-Then, unzip them in the folder dataset/ and reorganized as follows:
+Then, unzip them in the folder `dataset/` and reorganized as follows:
 ```
 dataset/
     image/
@@ -35,7 +33,7 @@ dataset/
             test-middlesplit.txt
             valid-middlesplit.txt
 ```
-**The clean-filelist.txt existed in dataset/, please put it in dataset/split/v1**. 
+**The clean-filelist.txt was existed in the folder `dataset/`, please put it in the folder `dataset/split/v1`**. 
 
 
 ### Pre-trained Models

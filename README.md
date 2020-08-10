@@ -12,9 +12,9 @@ Training the HoliCity V1 through MaskRCNN (Detectron2).
 
 ## Dataset
 
-Download the HoliCityV1 dataset from [holicity.io](https://people.eecs.berkeley.edu/~zyc/holicity/), 
-which including [split-v1](https://drive.google.com/file/d/1Uypum27IGCxIn4JQkgWJoKhhEmh3x_WS/view), [image](https://drive.google.com/file/d/11-u2uUzBJeKDT3sGz0K-wHJtLXY4NzJD/view), [plane](https://drive.google.com/file/d/1Q3bAl66US_ZfJ_QcaSNoJ6AqnfNBqyd4/view) . 
-Then, unzip them in the folder `dataset/` and reorganized as follows: (**The clean-filelist.txt already existed in the folder `dataset/`**. )
+Downloading the **HoliCityV1** dataset from the homepage [holicity.io](https://people.eecs.berkeley.edu/~zyc/holicity/), 
+which includes [split-v1](https://drive.google.com/file/d/1Uypum27IGCxIn4JQkgWJoKhhEmh3x_WS/view), [image](https://drive.google.com/file/d/11-u2uUzBJeKDT3sGz0K-wHJtLXY4NzJD/view), [plane](https://drive.google.com/file/d/1Q3bAl66US_ZfJ_QcaSNoJ6AqnfNBqyd4/view) . 
+Unzip into the folder `dataset/` and reorganized as follows: (**The clean-filelist.txt already existed in the folder `dataset/`**. )
 ```
 dataset/
     image/

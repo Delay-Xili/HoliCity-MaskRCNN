@@ -69,7 +69,7 @@ CUDA_VISIBLE_DEIVCES=0 python main.py -s predict -m HoliCityV1
 ## Authors
 
 * [**Xili Dai**](https://github.com/Delay-Xili)
-* [Yichao zhou](https://github.com/zhou13)
+* [Yichao Zhou](https://github.com/zhou13)
 
 ## License
 
@@ -77,6 +77,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* [Yichao zhou](https://github.com/zhou13)
+* [Yichao Zhou](https://github.com/zhou13)
 
 

@@ -50,10 +50,10 @@ You may reduce the batch size if you have less video memory.
 CUDA_VISIBLE_DEIVCES=0 python main.py -s train -m HoliCityV1
 ```
 It will build the train (HoliCityV1_train_coco_format.json) and valid (HoliCityV1_valid_coco_format.json) json file 
-in folder data/HoliCityV1_v1/ first, it will cost 1.5 and 0.5 hours respectively.
+in the folder `data/HoliCityV1_v1/` first, it will cost 1.5 and 0.5 hours respectively.
 
 ### Detect planes for Your Own Images
-To test the pretrained MaskRCNN above on your own images, you need change the HoliCity/init.py
+To test the pretrained MaskRCNN above on your own images, you need change the `HoliCity/init.py`
 ```
 self.ckpt = /the/checkpointfile/you/trained/
 
@@ -65,13 +65,6 @@ and execute
 ```
 CUDA_VISIBLE_DEIVCES=0 python main.py -s predict -m HoliCityV1
 ```
-
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
 
 ## Authors

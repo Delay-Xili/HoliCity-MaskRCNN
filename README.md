@@ -1,6 +1,9 @@
 # HoliCity-MaskRCNN
 
+
 Training the HoliCity V1 through MaskRCNN (Detectron2).
+<img src="https://people.eecs.berkeley.edu/~zyc/holicity/images/surface-segmentations-pazo2.jpg">
+
 
 
 ### Installing
